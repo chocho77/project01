@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ComponentOne from './commponents/ComponentOne';
+import MyComponent from './commponents/MyComponent';
+import ComponentTwo from './commponents/ComponentTwo';
 
 function App() {
   return (
@@ -18,6 +22,21 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+      <p>My Components</p>
+      <React.StrictMode>
+        <div>
+        <ComponentOne />
+        <ComponentTwo />
+        <MyComponent />
+        </div>
+      </React.StrictMode>
+      </main>
+      <footer>
+        footer
+      </footer>
+      
+
     </div>
   );
 }
