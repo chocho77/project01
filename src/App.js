@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
+import './App.css';
 import ComponentOne from './commponents/ComponentOne';
-import MyComponent from './commponents/MyComponent';
 import ComponentTwo from './commponents/ComponentTwo';
+import ErrorExample from './tutorial/useState/setup/error-example';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/**
+         *  <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -21,22 +21,16 @@ function App() {
         >
           Learn React
         </a>
+         */}
+       <p>My Components</p>
+        <React.StrictMode>
+          <div>
+          <ComponentOne />
+          <ComponentTwo />
+          <ErrorExample />
+          </div>
+        </React.StrictMode>
       </header>
-      <main>
-      <p>My Components</p>
-      <React.StrictMode>
-        <div>
-        <ComponentOne />
-        <ComponentTwo />
-        <MyComponent />
-        </div>
-      </React.StrictMode>
-      </main>
-      <footer>
-        footer
-      </footer>
-      
-
     </div>
   );
 }
