@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import ComponentOne from './commponents/ComponentOne';
 import ComponentTwo from './commponents/ComponentTwo';
-import ErrorExample from './tutorial/useState/setup/error-example';
+import { UseStateObject } from './tutorial/useState/setup/UseStateObject';
+
+
 
 function App() {
   return (
@@ -27,7 +29,7 @@ function App() {
           <div>
           <ComponentOne />
           <ComponentTwo />
-          <ErrorExample />
+          <UseStateObject/>
           </div>
         </React.StrictMode>
       </header>
